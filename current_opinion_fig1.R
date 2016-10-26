@@ -3,7 +3,7 @@
 library(plyr)
 library(reshape2)
 library(ggplot2)
-mydat <- read.table('may27_dcol.csv',
+mydat <- read.table('current_opinion_fig1_data.csv',
                     head=T, row.names=NULL, sep='\t')
 melt_mydat<-melt(mydat)
 
