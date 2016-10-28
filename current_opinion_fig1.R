@@ -17,6 +17,8 @@ sitelist <- c('Yellowstone National Park',
 regionlist <- c('Canada', 'Armenia', 'Tibet', 'China', 'New Zealand',
                  'Philippines')
 
+## Separate x and y axis lines in theme to display axis lines properly
+## http://stackoverflow.com/questions/35833307/ggplot2-axis-not-showing-after-using-themeaxis-line-element-linehttp://stackoverflow.com/questions/35833307/ggplot2-axis-not-showing-after-using-themeaxis-line-element-line
 
 for (i in seq(sitelist)){
     dat <- subset(melt_mydat, Site == sitelist[[i]])
@@ -49,7 +51,8 @@ for (i in seq(sitelist)){
                     panel.border=element_blank(),
                     panel.grid.minor=element_blank(),
                     panel.grid.major=element_blank(),
-                    axis.line=element_line(),
+		    axis.line.x = element_line(color="black", size=0),
+                    axis.line.y = element_line(color="black", size=0),
                     axis.text.x=element_text(size=30, face='bold'),
                     axis.text.y=element_text(size=30, face='bold'),
                     axis.title.x=element_text(size=30, face='bold',
@@ -83,7 +86,8 @@ for (i in seq(regionlist)){
                     panel.border=element_blank(),
                     panel.grid.minor=element_blank(),
                     panel.grid.major=element_blank(),
-                    axis.line=element_line(),
+		    axis.line.x = element_line(color="black", size=0),
+                    axis.line.y = element_line(color="black", size=0),
                     axis.text.x=element_text(size=30, face='bold'),
                     axis.text.y=element_text(size=30, face='bold'),
                     axis.title.x=element_text(size=30, face='bold',
