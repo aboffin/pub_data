@@ -18,7 +18,7 @@ regionlist <- c('Canada', 'Armenia', 'Tibet', 'China', 'New Zealand',
                  'Philippines')
 
 ## Separate x and y axis lines in theme to display axis lines properly
-## http://stackoverflow.com/questions/35833307/ggplot2-axis-not-showing-after-using-themeaxis-line-element-linehttp://stackoverflow.com/questions/35833307/ggplot2-axis-not-showing-after-using-themeaxis-line-element-line
+## http://stackoverflow.com/questions/35833307/ggplot2-axis-not-showing-after-using-themeaxis-line-element-line
 
 for (i in seq(sitelist)){
     dat <- subset(melt_mydat, Site == sitelist[[i]])
