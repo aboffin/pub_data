@@ -13,7 +13,7 @@ http://www.ncbi.nlm.nih.gov/pubmed/26113243, install R packages
 $ sudo R
 
 ## Inside R command-line prompt
-> install.packages('plyr') ## similarly install 'reshape2' and 'ggplot2'
+> install.packages(c('plyr', 'reshape2', 'ggplot2'))
 
 ## quit R
 > q()
